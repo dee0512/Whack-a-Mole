@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function()
-{
-    return 'Hello World';
-});
+
 Route::controller('game','GameController');
-//Route::controller('/','GameController');
+Route::controller('/','GameController');

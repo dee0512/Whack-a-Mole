@@ -1,12 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
-/* line 2, C:/wamp/www/wack-a-mole/public/css/style.scss */
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,900);
+/* line 2, C:/wamp/www/laravel-heroku/public/css/style.scss */
 body {
   background: #DAEDE2;
   font-family: Lato; }
-  /* line 5, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 5, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body .container {
     position: relative; }
-  /* line 8, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 8, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body h1 {
     color: #333745;
     font-family: Lato;
@@ -14,61 +14,61 @@ body {
     font-size: 5em;
     font-weight: 900;
     text-align: center; }
-  /* line 16, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 16, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body form {
     text-align: center;
     font-family: Lato;
     font-size: 2em; }
-    /* line 20, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 20, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body form input {
       padding: 0 .3em 0 .3em;
       color: #333745;
       border: 2px solid rgba(51, 55, 69, 0);
       transition: border ease .5s; }
-      /* line 25, C:/wamp/www/wack-a-mole/public/css/style.scss */
+      /* line 25, C:/wamp/www/laravel-heroku/public/css/style.scss */
       body form input:focus {
         outline: none;
         border: 2px solid #EA2E49; }
-  /* line 31, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 31, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body button {
     background: none;
     padding: .5em 2em .5em 2em;
     color: #333745;
     font-weight: 700; }
-  /* line 37, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 37, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #startbutton, body #historybutton, body #emailbutton, body #hilightbutton, body #hilightbutton2 {
     border: 1px solid #333745;
     transition: all ease .2s; }
-    /* line 41, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 41, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #startbutton:hover, body #historybutton:hover, body #emailbutton:hover, body #hilightbutton:hover, body #hilightbutton2:hover {
       background: #333745;
       color: #DAEDE2; }
-  /* line 46, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 46, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #hilightbutton {
     margin-top: 1em;
     margin-left: 24em; }
-  /* line 51, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 51, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #emailbutton {
     margin-top: 1em;
     margin-left: 31em; }
-  /* line 55, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 55, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #historybutton {
     margin-left: 3em;
     margin-top: 1em; }
-  /* line 59, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 59, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #startbutton {
     margin-left: 33em; }
-  /* line 62, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 62, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #stopbutton {
     border: 1px solid #EA2E49;
     transition: all ease .2s;
     color: #EA2E49;
     margin-left: 3em; }
-    /* line 67, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 67, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #stopbutton:hover {
       background: #EA2E49;
       color: #DAEDE2; }
-  /* line 72, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 72, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #scorebox {
     position: absolute;
     font-weight: 700;
@@ -77,17 +77,17 @@ body {
     padding: 2em;
     top: 1em;
     margin-left: 10em; }
-    /* line 80, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 80, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #scorebox .data {
       margin: .5em 0 .5em 0; }
-      /* line 83, C:/wamp/www/wack-a-mole/public/css/style.scss */
+      /* line 83, C:/wamp/www/laravel-heroku/public/css/style.scss */
       body #scorebox .data span {
         font-weight: 400; }
-  /* line 89, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 89, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body #game {
     width: 50%;
     margin-left: 25%; }
-    /* line 92, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 92, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #game .hole {
       background-image: url('images/hole.png');
       background-size: contain;
@@ -96,16 +96,16 @@ body {
       float: left;
       margin-top: 10%;
       cursor: pointer; }
-    /* line 101, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 101, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #game .hole.mole {
       background-image: url('images/mole.png'); }
-    /* line 104, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 104, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body #game .hole.highlight {
       border: 3px solid #EA2E49; }
-  /* line 109, C:/wamp/www/wack-a-mole/public/css/style.scss */
+  /* line 109, C:/wamp/www/laravel-heroku/public/css/style.scss */
   body .modal-body table {
     width: 100%; }
-    /* line 113, C:/wamp/www/wack-a-mole/public/css/style.scss */
+    /* line 113, C:/wamp/www/laravel-heroku/public/css/style.scss */
     body .modal-body table tr th:nth-of-type(2), body .modal-body table tr th:nth-of-type(3), body .modal-body table tr th:nth-of-type(4), body .modal-body table tr td:nth-of-type(2), body .modal-body table tr td:nth-of-type(3), body .modal-body table tr td:nth-of-type(4) {
       text-align: center; }
 
