@@ -81,5 +81,6 @@ class GameController extends Controller
         {
             $message->to( "devdharpatel@gmail.com", 'User')->subject('Your Whack-a-mole Score!');
         });
+        return redirect('/');
     }
 }
