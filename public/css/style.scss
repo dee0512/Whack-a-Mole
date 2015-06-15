@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+body{
+    background: #DAEDE2;
+    font-family:Lato;
+    .container{
+        position: relative;
+    }
+    h1{
+        color:#333745;
+        font-family: Lato;
+        text-shadow:3px 3px 0 #F6F792 ,6px 6px 0 #EA2E49;
+        font-size: 5em;
+        font-weight: 900;
+        text-align: center;
+    }
+    form{
+        text-align: center;
+        font-family: Lato;
+        font-size: 2em;
+        input{
+            padding: 0 .3em 0 .3em;
+            color: #333745;
+            border:2px solid rgba(51, 55, 69, 0);
+            transition: border ease .5s;
+            &:focus{
+                outline: none;
+                border:2px solid #EA2E49;
+            }
+        }
+    }
+    button{
+        background: none;
+        padding: .5em 2em .5em 2em;
+        color: #333745;
+        font-weight: 700;
+    }
+    #startbutton,#historybutton,#emailbutton,#hilightbutton,#hilightbutton2{
+        border: 1px solid #333745;
+        transition: all ease .2s;
+       
+        &:hover{
+            background: #333745;
+            color: #DAEDE2;
+        }
+    }
+    #hilightbutton{
+         margin-top: 1em;
+        margin-left:24em;
+    }
+    
+    #emailbutton{
+        margin-top: 1em;
+        margin-left: 31em;
+    }
+    #historybutton{
+        margin-left: 3em;
+        margin-top: 1em;
+    }
+    #startbutton{
+         margin-left:  33em;
+    }
+    #stopbutton{
+        border: 1px solid #EA2E49;
+        transition: all ease .2s;
+        color: #EA2E49;
+        margin-left: 3em;
+        &:hover{
+            background: #EA2E49;
+            color: #DAEDE2;
+        }
+    }
+    #scorebox{
+        position: absolute;
+        font-weight: 700;
+        background: #77C4D3;
+        border-radius: 10px;
+        padding: 2em;
+        top:1em;
+        margin-left: 10em;
+        .data{
+            margin: .5em 0 .5em 0;
+            
+            span{
+                font-weight: 400;
+
+            }
+        }
+    }
+    #game{
+        width: 50%;
+        margin-left: 25%;
+        .hole{
+            background-image: url('images/hole.png');
+            background-size:contain;
+            width: 20%;
+            margin-left:10%;
+            float: left;
+            margin-top: 10%;
+            cursor: pointer;
+        }
+        .hole.mole{
+            background-image: url('images/mole.png');
+        }
+        .hole.highlight{
+            border:3px solid #EA2E49;
+        }
+    }
+    .modal-body{
+        table{
+            width: 100%;
+            tr{
+                th,td{
+                    &:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
