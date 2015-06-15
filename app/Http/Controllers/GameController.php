@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use App\Player;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
