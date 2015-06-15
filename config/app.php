@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'https://limitless-wildwood-4583.herokuapp.com/',
 
     /*
     |--------------------------------------------------------------------------
