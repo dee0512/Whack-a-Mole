@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Player;
+use Mail;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -15,7 +15,7 @@ class GameController extends Controller
         
         $top = Player::orderBy('score','desc')->get();
         // check if there are atleast 3 players
-        if(sizeof($top)>3){
+        if(sizeof($top)>=3){
             $mole1 = Player::sum('mole1');
             $mole2 = Player::sum('mole2');
             $mole3 = Player::sum('mole3');
@@ -72,5 +72,13 @@ class GameController extends Controller
         $player->mole9 = $request->input('mole9');
         $player->save();
         return $this->getIndex(TRUE,$name,$score);
+    }
+    public function postEmail(Request $request)
+    {
+        $email =  $request->input('email');
+        Mail::send('email', ['name' => $request->input('name'),'score'=> $request->input('score')], function($message)
+        {
+            $message->to( "devdharpatel@gmail.com", 'User')->subject('Your Whack-a-mole Score!');
+        });
     }
 }

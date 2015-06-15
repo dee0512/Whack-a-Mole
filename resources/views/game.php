@@ -42,7 +42,7 @@
                 <div class="data">Points: <span id ="score"> <?php echo $score ?> </span></div>
                 <div class="data">Time: <span id ="time"> 0 </span></div>
             </div>
-            <button id="emailbutton" <?php if(!$post) {echo 'disabled';} ?> button>Email Score</button>
+            <button id="emailbutton" onclick="$('#myModal1').modal();" <?php if(!$post) {echo 'disabled';} ?> button>Email Score</button>
             <button onclick="$('#myModal').modal();" id="historybutton">Show History</button><br>
             <button id="hilightbutton" onclick = <?php echo "\"highlight(".$mole1.",".$mole2.",".$mole3.");\""?>>Highlight top 3 hit moles</button>
             <button id="hilightbutton2" onclick = <?php echo "\"highlight2(".$max.");\""?>>Highlight Mole hit most by top 3 players</button>
@@ -90,6 +90,28 @@
                           <td><?php echo $top[2]['mole']; ?></td>
                       </tr>
                   </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Top Players</h4>
+              </div>
+              <div class="modal-body">
+                  <form action="game/email" method="post" name="email" id="emailform">
+                      <input type="email" name="email" placeholder="Enter Email">
+                      <input type="text" name="name" hidden=""  value=<?php echo "\"".$name."\""?>>
+                      <input type="text" name="score"  hidden=""  value=<?php echo "\"".$score."\""?>>
+                      <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                      <input type="submit" value="Send">
+                  </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
