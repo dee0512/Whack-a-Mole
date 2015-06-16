@@ -42,12 +42,12 @@
                 <div class="data">Points: <span id ="score"> <?php echo $score ?> </span></div>
                 <div class="data">Time: <span id ="time"> 0 </span></div>
             </div>
-            <button id="emailbutton" onclick="$('#myModal1').modal();" <?php if(!$post) {echo 'disabled';} ?> button>Email Score</button>
+            <button id="emailbutton" onclick="$('#myModal1').modal();" <?php if(!$post) {echo 'disabled';} ?>>Email Score</button>
+            <button id="infobutton" onclick="$('#myModal2').modal();">i</button>
             <button onclick="$('#myModal').modal();" id="historybutton">Show History</button><br>
             <button id="hilightbutton" onclick = <?php echo "\"highlight(".$mole1.",".$mole2.",".$mole3.");\""?>>Highlight top 3 hit moles</button>
             <button id="hilightbutton2" onclick = <?php echo "\"highlight2(".$max.");\""?>>Highlight Mole hit most by top 3 players</button>
         </div>
-        <!-- Button trigger modal -->
 
         <!-- Player Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -112,6 +112,24 @@
                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                       <input type="submit" value="Send">
                   </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">About</h4>
+              </div>
+              <div class="modal-body">
+                  <p>This is a game created by Devdhar Patel using the laravel framework.</p>
+                  <p>Email : devdharpatel@gmail.com</p>
+                  <a href="https://github.com/dee0512/Whack-a-Mole">Github</a>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
